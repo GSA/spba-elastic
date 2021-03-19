@@ -1,10 +1,11 @@
 applications:
   - name: spba-elastic
     docker: 
-      image: chinchalinchin/spba-elastic:4
+      image: elasticsearch:2.4
     disk_quota: 5G
     memory: 8G
-    command: /bin/bash bin/es-docker
+    # command: /bin/bash bin/es-docker
     env:
       ES_JAVA_OPTS: "-Xms512m -Xmx512m"
       discovery.type: "single-node"
+      xpack.security.enabled: false
