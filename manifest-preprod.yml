@@ -4,6 +4,7 @@ applications:
       image: elasticsearch:2.4
     disk_quota: 5G
     # memory: 8G
+    
     memory: 4G
     # command: /bin/bash bin/es-docker
     env:
