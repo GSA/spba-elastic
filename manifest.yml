@@ -1,5 +1,5 @@
 applications:
-  - name: spba-elastic
+  - name: spba-elastic-dev
     docker: 
       image: elasticsearch:2.4
     disk_quota: 5G
